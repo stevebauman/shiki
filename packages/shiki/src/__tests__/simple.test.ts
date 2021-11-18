@@ -69,8 +69,6 @@ test('Highlighter can load all languages', async () => {
     langs: ['js']
   })
 
-  await highlighter.loadLanguage('abap')
-
   await Promise.all(
     BUNDLED_LANGUAGES.map(async lang => await highlighter.loadLanguage(lang.id as Lang))
   )
