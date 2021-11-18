@@ -154,6 +154,12 @@ export const languages: ILanguageRegistration[] = [
     samplePath: 'ada.sample'
   },
   {
+    id: 'antlers',
+    scopeName: 'text.html.statamic',
+    path: 'languages/antlers.tmLanguage.json',
+    embeddedLangs: ['html', 'php'],
+  },
+  {
     id: 'apache',
     scopeName: 'source.apacheconf',
     path: 'apache.tmLanguage.json'
@@ -225,6 +231,12 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'source.bicep',
     path: 'bicep.tmLanguage.json',
     samplePath: 'bicep.sample'
+  },
+  {
+    id: 'blade',
+    scopeName: 'text.html.php.blade',
+    path: 'languages/blade.tmLanguage.json',
+    embeddedLangs: ['html', 'php'],
   },
   {
     id: 'c',
