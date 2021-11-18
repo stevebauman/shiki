@@ -164,11 +164,28 @@ export async function getHighlighter(options: HighlighterOptions): Promise<Highl
     await _registry.loadTheme(theme)
   }
 
-  async function loadLanguage(lang: ILanguageRegistration | Lang) {
+  async function loadLanguage(
+    lang: ILanguageRegistration | Lang,
+    embeddedLangMaxDepth: number = 1,
+    depth: number = 0
+  ) {
     const _lang = resolveLang(lang)
 
     _resolver.addLanguage(_lang)
+
     await _registry.loadLanguage(_lang)
+
+    if (depth < embeddedLangMaxDepth) {
+      const notLoaded = (_lang.embeddedLangs ?? []).filter(
+        embeddedLang => !getLoadedLanguages().includes(embeddedLang)
+      )
+
+      await Promise.all(
+        notLoaded.map(
+          async embeddedLang => await loadLanguage(embeddedLang, embeddedLangMaxDepth, ++depth)
+        )
+      )
+    }
   }
 
   function getLoadedThemes() {

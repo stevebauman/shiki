@@ -72,9 +72,13 @@ export interface Highlighter {
   loadTheme(theme: IThemeRegistration): Promise<void>
 
   /**
-   * Load a language
+   * Load a language with its embedded languages.
    */
-  loadLanguage(lang: ILanguageRegistration | Lang): Promise<void>
+  loadLanguage(
+    lang: ILanguageRegistration | Lang,
+    embeddedLangMaxDepth?: number,
+    depth?: number
+  ): Promise<void>
 
   /**
    * Get all loaded themes
