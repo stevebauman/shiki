@@ -156,7 +156,7 @@ export const languages: ILanguageRegistration[] = [
   {
     id: 'antlers',
     scopeName: 'text.html.statamic',
-    path: 'languages/antlers.tmLanguage.json',
+    path: 'antlers.tmLanguage.json',
     embeddedLangs: ['html', 'php'],
   },
   {
@@ -235,7 +235,7 @@ export const languages: ILanguageRegistration[] = [
   {
     id: 'blade',
     scopeName: 'text.html.php.blade',
-    path: 'languages/blade.tmLanguage.json',
+    path: 'blade.tmLanguage.json',
     embeddedLangs: ['html', 'php'],
   },
   {
