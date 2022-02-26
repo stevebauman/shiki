@@ -4,6 +4,7 @@ export type Lang =
   | 'abap'
   | 'actionscript-3'
   | 'ada'
+  | 'antlers'
   | 'apache'
   | 'apex'
   | 'apl'
@@ -16,6 +17,7 @@ export type Lang =
   | 'berry' | 'be'
   | 'bibtex'
   | 'bicep'
+  | 'blade'
   | 'c'
   | 'clojure' | 'clj'
   | 'cobol'
@@ -159,7 +161,7 @@ export const languages: ILanguageRegistration[] = [
     id: 'antlers',
     scopeName: 'text.html.statamic',
     path: 'antlers.tmLanguage.json',
-    embeddedLangs: ['html', 'php'],
+    embeddedLangs: ['html', 'php', 'yaml']
   },
   {
     id: 'apache',
@@ -238,7 +240,7 @@ export const languages: ILanguageRegistration[] = [
     id: 'blade',
     scopeName: 'text.html.php.blade',
     path: 'blade.tmLanguage.json',
-    embeddedLangs: ['html', 'php'],
+    embeddedLangs: ['html', 'xml', 'sql', 'javascript', 'json', 'css']
   },
   {
     id: 'c',
@@ -563,6 +565,7 @@ export const languages: ILanguageRegistration[] = [
     id: 'marko',
     scopeName: 'text.marko',
     path: 'marko.tmLanguage.json',
+    samplePath: 'marko.sample',
     embeddedLangs: ['css', 'less', 'scss', 'javascript']
   },
   {
