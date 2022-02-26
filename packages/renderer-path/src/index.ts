@@ -1,5 +1,5 @@
 import { load, parse } from 'opentype.js'
-import type { IThemedToken } from 'shiki'
+import type { IThemedToken } from '@stevebauman/shiki'
 
 interface PathRendererOptions {
   /**
