@@ -1,6 +1,6 @@
-import type { IThemedToken } from '@stevebauman/shiki'
+import type { IThemedToken } from 'shiki'
 import { measureMonospaceTypeface } from './measureMonospaceTypeface'
-import { FontStyle } from '@stevebauman/shiki'
+import { FontStyle } from 'shiki'
 
 interface RemoteFontFamily {
   /**
