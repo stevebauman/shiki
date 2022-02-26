@@ -61,7 +61,6 @@ export type Lang =
   | 'jssm' | 'fsl'
   | 'jsx'
   | 'julia'
-  | 'jupyter'
   | 'kotlin'
   | 'latex'
   | 'less'
@@ -70,8 +69,10 @@ export type Lang =
   | 'lua'
   | 'make' | 'makefile'
   | 'markdown' | 'md'
+  | 'marko'
   | 'matlab'
   | 'mdx'
+  | 'mermaid'
   | 'nginx'
   | 'nim'
   | 'nix'
@@ -133,6 +134,7 @@ export type Lang =
   | 'xml'
   | 'xsl'
   | 'yaml'
+  | 'zenscript'
 
 export const languages: ILanguageRegistration[] = [
   {
@@ -512,12 +514,6 @@ export const languages: ILanguageRegistration[] = [
     embeddedLangs: ['cpp', 'python', 'javascript', 'r', 'sql']
   },
   {
-    id: 'jupyter',
-    scopeName: 'source.jupyter',
-    path: 'jupyter.tmLanguage.json',
-    embeddedLangs: ['json']
-  },
-  {
     id: 'kotlin',
     scopeName: 'source.kotlin',
     path: 'kotlin.tmLanguage.json'
@@ -564,6 +560,12 @@ export const languages: ILanguageRegistration[] = [
     embeddedLangs: ['css', 'html', 'ini', 'java', 'lua', 'make', 'perl', 'r', 'ruby', 'php', 'sql', 'vb', 'xml', 'xsl', 'yaml', 'bat', 'clojure', 'coffee', 'c', 'cpp', 'diff', 'docker', 'git-commit', 'git-rebase', 'go', 'groovy', 'pug', 'javascript', 'json', 'jsonc', 'less', 'objective-c', 'swift', 'scss', 'raku', 'powershell', 'python', 'rust', 'scala', 'shellscript', 'typescript', 'tsx', 'csharp', 'fsharp', 'dart', 'handlebars', 'erlang', 'elixir', 'latex', 'bibtex']
   },
   {
+    id: 'marko',
+    scopeName: 'text.marko',
+    path: 'marko.tmLanguage.json',
+    embeddedLangs: ['css', 'less', 'scss', 'javascript']
+  },
+  {
     id: 'matlab',
     scopeName: 'source.matlab',
     path: 'matlab.tmLanguage.json'
@@ -573,6 +575,11 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'text.html.markdown.jsx',
     path: 'mdx.tmLanguage.json',
     embeddedLangs: ['jsx', 'markdown']
+  },
+  {
+    id: 'mermaid',
+    scopeName: 'markdown.mermaid.codeblock',
+    path: 'mermaid.tmLanguage.json'
   },
   {
     id: 'nginx',
@@ -921,5 +928,11 @@ export const languages: ILanguageRegistration[] = [
     id: 'yaml',
     scopeName: 'source.yaml',
     path: 'yaml.tmLanguage.json'
+  },
+  {
+    id: 'zenscript',
+    scopeName: 'source.zenscript',
+    path: 'zenscript.tmLanguage.json',
+    samplePath: 'zenscript.sample'
   }
 ]

@@ -38,7 +38,7 @@ If you just have a `.tmLanguage` and need to convert it to JSON, [this VS Code e
   - Space for indentation
   - Less than 100 columns if possible
   - Link to source in the last line, for example `# From https://poignant.guide/book/chapter-5.html`
-- Run `yarn update:grammars`
+- Run `pnpm update:grammars`
 - Review the diffs in git. You should see:
   - `docs/languages.md`: Your language id added
   - `packages/shiki/languages/<lang>.tmLanguage.json`: The grammar downloaded
@@ -111,7 +111,6 @@ export type Lang =
   | 'jssm' | 'fsl'
   | 'jsx'
   | 'julia'
-  | 'jupyter'
   | 'kotlin'
   | 'latex'
   | 'less'
@@ -120,8 +119,10 @@ export type Lang =
   | 'lua'
   | 'make' | 'makefile'
   | 'markdown' | 'md'
+  | 'marko'
   | 'matlab'
   | 'mdx'
+  | 'mermaid'
   | 'nginx'
   | 'nim'
   | 'nix'
@@ -183,4 +184,5 @@ export type Lang =
   | 'xml'
   | 'xsl'
   | 'yaml'
+  | 'zenscript'
 ```
