@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-import type { IThemedToken } from 'shiki'
+import type { IThemedToken } from '@stevebauman/shiki'
 import { getPathRenderer } from '../index'
 
 describe('Path Renderer', () => {
