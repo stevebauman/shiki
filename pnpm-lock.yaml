@@ -68,25 +68,25 @@ importers:
 
   packages/renderer-path:
     specifiers:
+      '@stevebauman/shiki': ^0.10.2
       '@types/node': ^14.17.7
       '@types/opentype.js': ^1.3.3
       opentype.js: ^1.3.4
-      shiki: ^0.9.7
     devDependencies:
+      '@stevebauman/shiki': link:../shiki
       '@types/node': 14.18.12
       '@types/opentype.js': 1.3.3
       opentype.js: 1.3.4
-      shiki: 0.9.15
 
   packages/renderer-svg:
     specifiers:
+      '@stevebauman/shiki': ^0.10.2
       '@types/node': ^14.17.7
       playwright: ^1.19.1
-      shiki: ^0.10.1
     devDependencies:
+      '@stevebauman/shiki': link:../shiki
       '@types/node': 14.18.12
       playwright: 1.19.1
-      shiki: link:../shiki
 
   packages/shiki:
     specifiers:
@@ -112,14 +112,14 @@ importers:
       '@types/node': 10.17.60
       markdown-it: 12.3.2
       playwright: 1.19.1
-      shiki: link:../shiki
+      shiki: 0.10.1
       shiki-renderer-svg: link:../renderer-svg
 
   packages/vuepress-plugin:
     specifiers:
       shiki: ^0.10.1
     dependencies:
-      shiki: link:../shiki
+      shiki: 0.10.1
 
 packages:
 
@@ -7555,13 +7555,12 @@ packages:
     dev: true
     optional: true
 
-  /shiki/0.9.15:
-    resolution: {integrity: sha512-/Y0z9IzhJ8nD9nbceORCqu6NgT9X6I8Fk8c3SICHI5NbZRLdZYFaB233gwct9sU0vvSypyaL/qaKvzyQGJBZSw==}
+  /shiki/0.10.1:
+    resolution: {integrity: sha512-VsY7QJVzU51j5o1+DguUd+6vmCmZ5v/6gYu4vyYAhzjuNQU6P/vmSy4uQaOhvje031qQMiW0d2BwgMH52vqMng==}
     dependencies:
       jsonc-parser: 3.0.0
       vscode-oniguruma: 1.6.1
       vscode-textmate: 5.2.0
-    dev: true
 
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
