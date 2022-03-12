@@ -24,7 +24,7 @@
     "watch": "rollup -c -w"
   },
   "peerDependencies": {
-    "shiki": "^0.9.3"
+    "@stevebauman/shiki": "^0.10.2"
   },
   "devDependencies": {
     "@types/node": "^14.17.7",
