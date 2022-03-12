@@ -6,7 +6,6 @@
  * Remove these grammars bundled in vscode
  */
 export const vscodeGrammarsToRemove = [
-  'html-derivative',
   'ignore',
   'MagicRegExp',
   'platform',
@@ -303,8 +302,6 @@ export const languageAliases = {
 export const embeddedLanguagesToExclude = [
   // `jinja-html` instead
   'jinja',
-  // `php` instead
-  'php-html',
   // embedded by `cpp`
   'cpp-macro'
 ]

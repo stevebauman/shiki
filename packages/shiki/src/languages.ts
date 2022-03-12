@@ -52,6 +52,7 @@ export type Lang =
   | 'haskell'
   | 'hcl'
   | 'hlsl'
+  | 'html-derivative'
   | 'html'
   | 'ini'
   | 'java'
@@ -83,6 +84,7 @@ export type Lang =
   | 'ocaml'
   | 'pascal'
   | 'perl'
+  | 'php-html'
   | 'php'
   | 'plsql'
   | 'postcss'
@@ -98,6 +100,7 @@ export type Lang =
   | 'razor'
   | 'rel'
   | 'riscv'
+  | 'rst'
   | 'ruby' | 'rb'
   | 'rust' | 'rs'
   | 'sas'
@@ -427,7 +430,7 @@ export const languages: ILanguageRegistration[] = [
     id: 'haml',
     scopeName: 'text.haml',
     path: 'haml.tmLanguage.json',
-    embeddedLangs: ['ruby', 'javascript', 'sass', 'coffee', 'markdown', 'css']
+    embeddedLangs: ['ruby', 'javascript', 'sass', 'coffee', 'php-html', 'markdown', 'css']
   },
   {
     id: 'handlebars',
@@ -450,6 +453,12 @@ export const languages: ILanguageRegistration[] = [
     id: 'hlsl',
     scopeName: 'source.hlsl',
     path: 'hlsl.tmLanguage.json'
+  },
+  {
+    id: 'html-derivative',
+    scopeName: 'text.html.derivative',
+    path: 'html-derivative.tmLanguage.json',
+    embeddedLangs: ['html']
   },
   {
     id: 'html',
@@ -559,12 +568,13 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'text.html.markdown',
     path: 'markdown.tmLanguage.json',
     aliases: ['md'],
-    embeddedLangs: ['css', 'html', 'ini', 'java', 'lua', 'make', 'perl', 'r', 'ruby', 'php', 'sql', 'vb', 'xml', 'xsl', 'yaml', 'bat', 'clojure', 'coffee', 'c', 'cpp', 'diff', 'docker', 'git-commit', 'git-rebase', 'go', 'groovy', 'pug', 'javascript', 'json', 'jsonc', 'less', 'objective-c', 'swift', 'scss', 'raku', 'powershell', 'python', 'rust', 'scala', 'shellscript', 'typescript', 'tsx', 'csharp', 'fsharp', 'dart', 'handlebars', 'erlang', 'elixir', 'latex', 'bibtex']
+    embeddedLangs: ['css', 'html', 'ini', 'java', 'lua', 'make', 'perl', 'r', 'ruby', 'php', 'sql', 'vb', 'xml', 'xsl', 'yaml', 'bat', 'clojure', 'coffee', 'c', 'cpp', 'diff', 'docker', 'git-commit', 'git-rebase', 'go', 'groovy', 'pug', 'javascript', 'json', 'jsonc', 'less', 'objective-c', 'swift', 'scss', 'raku', 'powershell', 'python', 'rust', 'scala', 'shellscript', 'typescript', 'tsx', 'csharp', 'fsharp', 'dart', 'handlebars', 'erlang', 'elixir', 'latex', 'bibtex', 'html-derivative']
   },
   {
     id: 'marko',
     scopeName: 'text.marko',
     path: 'marko.tmLanguage.json',
+    samplePath: 'marko.sample',
     embeddedLangs: ['css', 'less', 'scss', 'javascript']
   },
   {
@@ -626,6 +636,12 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'source.perl',
     path: 'perl.tmLanguage.json',
     embeddedLangs: ['html', 'xml', 'css', 'javascript', 'sql']
+  },
+  {
+    id: 'php-html',
+    scopeName: 'text.html.php',
+    path: 'php-html.tmLanguage.json',
+    embeddedLangs: ['html', 'blade', 'html-derivative', 'php']
   },
   {
     id: 'php',
@@ -711,6 +727,12 @@ export const languages: ILanguageRegistration[] = [
     id: 'riscv',
     scopeName: 'source.riscv',
     path: 'riscv.tmLanguage.json'
+  },
+  {
+    id: 'rst',
+    scopeName: 'source.rst',
+    path: 'rst.tmLanguage.json',
+    embeddedLangs: ['html-derivative', 'cpp', 'python', 'javascript', 'shellscript', 'yaml', 'ruby']
   },
   {
     id: 'ruby',
