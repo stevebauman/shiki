@@ -85,6 +85,20 @@ export const marketplaceThemeSources: { [extPublisherAndId: string]: [string, st
     ['material-ocean.json', 'extension/build/themes/Material-Theme-Ocean.json'],
     ['material-palenight.json', 'extension/build/themes/Material-Theme-Palenight.json']
   ],
+  'OhaiHFO.synthwave-x-fluoromachine-avant-noir': [
+    ['synthwave-x.json', 'extension/themes/synthwave-x-fluoromachine-avant-noir.json']
+  ],
+  'RobbOwen.synthwave-vscode': [
+    ['synthwave-84.json', 'extension/themes/synthwave-color-theme.json']
+  ],
+  'sanchodelniglo.synthwave-80s-color-theme': [
+    ['synthwave-80s.json', 'extension/themes/synthwave-80s-blue.json']
+  ],
+  'fehey.brackets-light-pro': [
+    ['brackets-light-pro.json', 'extension/themes/Brackets Light Pro-color-theme.json']
+  ],
+  'akamud.vscode-theme-onelight': [['one-light.json', 'extension/themes/OneLight.json']],
+  'akamud.vscode-theme-onedark': [['one-dark.json', 'extension/themes/OneDark.json']],
   'dracula-theme.theme-dracula': [
     ['dracula.json', 'extension/theme/dracula.json'],
     ['dracula-soft.json', 'extension/theme/dracula-soft.json']
