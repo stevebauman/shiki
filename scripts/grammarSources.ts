@@ -93,6 +93,10 @@ export const githubGrammarSources: [string, string][] = [
     'https://github.com/berry-lang/berry/blob/master/tools/plugins/vscode/skiars.berry-0.1.0/syntaxes/berry.json'
   ],
   ['bicep', 'https://github.com/Azure/bicep/blob/main/src/textmate/bicep.tmlanguage'],
+  [
+    'cadence',
+    'https://github.com/onflow/vscode-cadence/blob/master/syntaxes/cadence.tmGrammar.json'
+  ],
   ['cobol', 'https://github.com/spgennard/vscode_cobol/blob/master/syntaxes/COBOL.tmLanguage.json'],
   ['codeql', 'https://github.com/github/vscode-codeql/blob/main/syntaxes/ql.tmLanguage.json'],
   [
@@ -125,6 +129,7 @@ export const githubGrammarSources: [string, string][] = [
     'gherkin',
     'https://github.com/alexkrechik/VSCucumberAutoComplete/blob/master/gclient/syntaxes/feature.tmLanguage'
   ],
+  ['glsl', 'https://github.com/polym0rph/GLSL.tmbundle/blob/master/Syntaxes/GLSL.tmLanguage'],
   [
     'gnuplot',
     'https://github.com/MarioSchwalbe/vscode-gnuplot/blob/master/syntaxes/gnuplot.tmLanguage'
@@ -153,6 +158,10 @@ export const githubGrammarSources: [string, string][] = [
   ],
   ['latex', 'https://github.com/James-Yu/LaTeX-Workshop/blob/master/syntax/LaTeX.tmLanguage.json'],
   ['lisp', 'https://github.com/mattn/vscode-lisp/blob/master/syntaxes/Lisp.tmLanguage'],
+  [
+    'liquid',
+    'https://github.com/Shopify/liquid-tm-grammar/blob/main/grammars/liquid.tmLanguage.json'
+  ],
   ['logo', 'https://github.com/textmate/logo.tmbundle/blob/master/Syntaxes/Logo.tmLanguage'],
   ['marko', 'https://github.com/marko-js/marko-tmbundle/blob/master/Syntaxes/Marko.tmLanguage'],
   [
@@ -269,6 +278,7 @@ export const githubGrammarSources: [string, string][] = [
 export const languageAliases = {
   bat: ['batch'],
   berry: ['be'],
+  cadence: ['cdc'],
   clojure: ['clj'],
   csharp: ['c#'],
   fsharp: ['f#'],
