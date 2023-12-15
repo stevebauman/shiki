@@ -112,5 +112,6 @@ export const marketplaceThemeSources: { [extPublisherAndId: string]: [string, st
     ['vitesse-dark.json', 'extension/themes/vitesse-dark.json'],
     ['vitesse-light.json', 'extension/themes/vitesse-light.json']
   ],
-  'zhuangtongfa.material-theme': [['one-dark-pro.json', 'extension/themes/OneDark-Pro.json']]
+  'zhuangtongfa.material-theme': [['one-dark-pro.json', 'extension/themes/OneDark-Pro.json']],
+  'wesbos.theme-cobalt2': [['cobalt2.json', 'extension/themes/cobalt2.json']]
 }

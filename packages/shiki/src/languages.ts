@@ -62,6 +62,7 @@ export type Lang =
   | 'jinja-html'
   | 'json'
   | 'jsonc'
+  | 'jsonl'
   | 'jsonnet'
   | 'jssm' | 'fsl'
   | 'jsx'
@@ -114,6 +115,7 @@ export type Lang =
   | 'shaderlab' | 'shader'
   | 'shellscript' | 'shell' | 'bash' | 'sh' | 'zsh'
   | 'smalltalk'
+  | 'snippets'
   | 'solidity'
   | 'sparql'
   | 'sql'
@@ -203,7 +205,7 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'source.astro',
     path: 'astro.tmLanguage.json',
     samplePath: 'astro.sample',
-    embeddedLangs: ['json', 'javascript', 'typescript', 'tsx', 'css', 'less', 'sass', 'scss', 'stylus', 'markdown']
+    embeddedLangs: ['json', 'javascript', 'typescript', 'stylus', 'sass', 'css', 'scss', 'less', 'postcss', 'tsx']
   },
   {
     id: 'awk',
@@ -520,6 +522,11 @@ export const languages: ILanguageRegistration[] = [
     path: 'jsonc.tmLanguage.json'
   },
   {
+    id: 'jsonl',
+    scopeName: 'source.json.lines',
+    path: 'jsonl.tmLanguage.json'
+  },
+  {
     id: 'jsonnet',
     scopeName: 'source.jsonnet',
     path: 'jsonnet.tmLanguage.json'
@@ -551,13 +558,12 @@ export const languages: ILanguageRegistration[] = [
     id: 'latex',
     scopeName: 'text.tex.latex',
     path: 'latex.tmLanguage.json',
-    embeddedLangs: ['tex', 'css', 'html', 'java', 'javascript', 'typescript', 'lua', 'python', 'julia', 'ruby', 'xml', 'yaml', 'cpp', 'haskell', 'scala', 'gnuplot']
+    embeddedLangs: ['tex', 'css', 'haskell', 'html', 'xml', 'java', 'lua', 'julia', 'ruby', 'javascript', 'typescript', 'python', 'yaml', 'rust', 'scala', 'gnuplot']
   },
   {
     id: 'less',
     scopeName: 'source.css.less',
-    path: 'less.tmLanguage.json',
-    embeddedLangs: ['css']
+    path: 'less.tmLanguage.json'
   },
   {
     id: 'liquid',
@@ -615,7 +621,7 @@ export const languages: ILanguageRegistration[] = [
   },
   {
     id: 'mermaid',
-    scopeName: 'markdown.mermaid.codeblock',
+    scopeName: 'source.mermaid',
     path: 'mermaid.tmLanguage.json'
   },
   {
@@ -706,7 +712,7 @@ export const languages: ILanguageRegistration[] = [
     scopeName: 'text.pug',
     path: 'pug.tmLanguage.json',
     aliases: ['jade'],
-    embeddedLangs: ['javascript', 'css', 'sass', 'stylus', 'coffee', 'html']
+    embeddedLangs: ['javascript', 'css', 'sass', 'scss', 'stylus', 'coffee', 'html']
   },
   {
     id: 'puppet',
@@ -811,13 +817,17 @@ export const languages: ILanguageRegistration[] = [
     id: 'shellscript',
     scopeName: 'source.shell',
     path: 'shellscript.tmLanguage.json',
-    aliases: ['shell', 'bash', 'sh', 'zsh'],
-    embeddedLangs: ['ruby', 'python', 'applescript', 'html', 'markdown']
+    aliases: ['shell', 'bash', 'sh', 'zsh']
   },
   {
     id: 'smalltalk',
     scopeName: 'source.smalltalk',
     path: 'smalltalk.tmLanguage.json'
+  },
+  {
+    id: 'snippets',
+    scopeName: 'source.json.comments.snippets',
+    path: 'snippets.tmLanguage.json'
   },
   {
     id: 'solidity',

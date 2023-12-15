@@ -1,7 +1,9 @@
 export type Theme =
   | 'brackets-light-pro'
+  | 'cobalt2'
   | 'css-variables'
   | 'dark-plus'
+  | 'dark_modern'
   | 'dracula-soft'
   | 'dracula'
   | 'github-dark-dimmed'
@@ -9,6 +11,7 @@ export type Theme =
   | 'github-light'
   | 'hc_light'
   | 'light-plus'
+  | 'light_modern'
   | 'material-darker'
   | 'material-default'
   | 'material-lighter'
@@ -37,8 +40,10 @@ export type Theme =
 
 export const themes: Theme[] = [
   'brackets-light-pro',
+  'cobalt2',
   'css-variables',
   'dark-plus',
+  'dark_modern',
   'dracula-soft',
   'dracula',
   'github-dark-dimmed',
@@ -46,6 +51,7 @@ export const themes: Theme[] = [
   'github-light',
   'hc_light',
   'light-plus',
+  'light_modern',
   'material-darker',
   'material-default',
   'material-lighter',
