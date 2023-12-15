@@ -1,5 +1,4 @@
 {
-  "private": true,
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r  --parallel watch",
@@ -41,7 +40,7 @@
     "lint-staged": "^10.5.4",
     "lodash.kebabcase": "^4.1.1",
     "prettier": "^2.5.1",
-    "rollup": "^2.70.0",
+    "rollup": "^2.78.0",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-dts": "^3.0.2",
     "rollup-plugin-esbuild": "^4.8.2",
