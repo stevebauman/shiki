@@ -3,7 +3,6 @@ export type Theme =
   | 'cobalt2'
   | 'css-variables'
   | 'dark-plus'
-  | 'dark_modern'
   | 'dracula-soft'
   | 'dracula'
   | 'github-dark-dimmed'
@@ -11,7 +10,6 @@ export type Theme =
   | 'github-light'
   | 'hc_light'
   | 'light-plus'
-  | 'light_modern'
   | 'material-darker'
   | 'material-default'
   | 'material-lighter'
@@ -43,7 +41,6 @@ export const themes: Theme[] = [
   'cobalt2',
   'css-variables',
   'dark-plus',
-  'dark_modern',
   'dracula-soft',
   'dracula',
   'github-dark-dimmed',
@@ -51,7 +48,6 @@ export const themes: Theme[] = [
   'github-light',
   'hc_light',
   'light-plus',
-  'light_modern',
   'material-darker',
   'material-default',
   'material-lighter',

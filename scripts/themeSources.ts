@@ -6,10 +6,14 @@
  * Remove these themes bundled in vscode
  */
 export const vscodeThemesToRemove = [
+  'dark_modern',
+  'light_modern',
   // Included in dark_plus
   'dark_vs',
+  'dark_plus_experimental',
   // Included in light_plus
   'light_vs',
+  'light_plus_experimental',
   'Red-color-theme',
   'dimmed-monokai-color-theme',
   'kimbie-dark-color-theme',
