@@ -89,6 +89,7 @@ Note that this client-side theme is less granular than most other supported VSCo
 
 ```ts
 export type Theme =
+  | 'bluloco-light-color-theme'
   | 'brackets-light-pro'
   | 'cobalt2'
   | 'css-variables'

@@ -68,6 +68,10 @@ export const githubThemeSources: [string, string][] = [
   [
     'rose-pine-moon',
     'https://github.com/rose-pine/vscode/blob/main/themes/rose-pine-moon-color-theme.json'
+  ],
+  [
+    'bluloco-light-color-theme',
+    'https://github.com/uloco/theme-bluloco-light/blob/main/themes/bluloco-light-color-theme.json'
   ]
 ]
 

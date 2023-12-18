@@ -1,4 +1,5 @@
 export type Theme =
+  | 'bluloco-light-color-theme'
   | 'brackets-light-pro'
   | 'cobalt2'
   | 'css-variables'
@@ -38,6 +39,7 @@ export type Theme =
   | 'vitesse-light'
 
 export const themes: Theme[] = [
+  'bluloco-light-color-theme',
   'brackets-light-pro',
   'cobalt2',
   'css-variables',
