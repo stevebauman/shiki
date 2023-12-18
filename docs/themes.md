@@ -113,6 +113,7 @@ export type Theme =
   | 'one-dark'
   | 'one-light'
   | 'poimandres'
+  | 'rajoyish'
   | 'rose-pine-dawn'
   | 'rose-pine-moon'
   | 'rose-pine'
