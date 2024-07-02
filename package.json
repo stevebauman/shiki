@@ -1,6 +1,6 @@
 {
   "name": "@stevebauman/shiki",
-  "version": "0.10.5",
+  "version": "0.10.6",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r  --parallel watch",
