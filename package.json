@@ -1,4 +1,5 @@
 {
+  "name": "@stevebauman/shiki",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r  --parallel watch",
