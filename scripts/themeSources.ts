@@ -72,6 +72,14 @@ export const githubThemeSources: [string, string][] = [
   [
     'bluloco-light-color-theme',
     'https://github.com/uloco/theme-bluloco-light/blob/main/themes/bluloco-light-color-theme.json'
+  ],
+  [
+    'tailwind-light',
+    'https://github.com/raycast/ray-so/blob/main/app/(navigation)/(code)/assets/tailwind/light.json'
+  ],
+  [
+    'tailwind-dark',
+    'https://github.com/raycast/ray-so/blob/main/app/(navigation)/(code)/assets/tailwind/dark.json'
   ]
 ]
 

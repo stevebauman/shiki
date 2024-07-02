@@ -35,6 +35,8 @@ export type Theme =
   | 'synthwave-80s'
   | 'synthwave-84'
   | 'synthwave-x'
+  | 'tailwind-dark'
+  | 'tailwind-light'
   | 'vitesse-dark'
   | 'vitesse-light'
 
@@ -75,6 +77,8 @@ export const themes: Theme[] = [
   'synthwave-80s',
   'synthwave-84',
   'synthwave-x',
+  'tailwind-dark',
+  'tailwind-light',
   'vitesse-dark',
   'vitesse-light'
 ]
