@@ -91,6 +91,10 @@ Note that this client-side theme is less granular than most other supported VSCo
 export type Theme =
   | 'bluloco-light-color-theme'
   | 'brackets-light-pro'
+  | 'catppuccin-frappe'
+  | 'catppuccin-latte'
+  | 'catppuccin-macchiato'
+  | 'catppuccin-mocha'
   | 'cobalt2'
   | 'css-variables'
   | 'dark-plus'

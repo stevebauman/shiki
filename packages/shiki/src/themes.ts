@@ -1,6 +1,10 @@
 export type Theme =
   | 'bluloco-light-color-theme'
   | 'brackets-light-pro'
+  | 'catppuccin-frappe'
+  | 'catppuccin-latte'
+  | 'catppuccin-macchiato'
+  | 'catppuccin-mocha'
   | 'cobalt2'
   | 'css-variables'
   | 'dark-plus'
@@ -43,6 +47,10 @@ export type Theme =
 export const themes: Theme[] = [
   'bluloco-light-color-theme',
   'brackets-light-pro',
+  'catppuccin-frappe',
+  'catppuccin-latte',
+  'catppuccin-macchiato',
+  'catppuccin-mocha',
   'cobalt2',
   'css-variables',
   'dark-plus',
